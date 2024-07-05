@@ -1,0 +1,155 @@
+---
+title: "Static Dashboard Template"
+grid-cols: 3
+grid-rows: 3
+paper: "us-letter"
+flipped: true
+header_col: "FFA500"
+format:
+  typst_static_dashboard-typst: default
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  out.height = "92%"
+)
+
+library(tidyverse)
+```
+
+
+:::: {.dashgrid}
+::: {.dashcell}
+### Introduction
+Hello, welcome to the dashboard template, this is a static dashboard meant to generate a pdf on a paper size of your choice.
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+
+::: {.dashcell}
+### Sample Graph
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point() +
+  labs(x = "", y = "") +
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+    plot.title = element_text(size = 18),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+```
+:::
+::::
