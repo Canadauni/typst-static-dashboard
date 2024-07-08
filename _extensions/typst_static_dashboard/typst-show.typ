@@ -19,8 +19,14 @@ $endif$
 $if(grid-cols)$
   grid-cols: $grid-cols$,
 $endif$
-$if(grid_rows)$
-  grid_rows: "$grid_rows$",
+$if(grid-rows)$
+  grid-rows: $grid-rows$,
+$endif$
+$if(font-size)$
+  font-size: "$font-size$",
+$endif$
+$if(font-col)$
+  font-col: "$font-col$",
 $endif$
 $if(paper)$
   paper: "$paper$",
@@ -33,5 +39,8 @@ $if(margin)$
 $endif$
 $if(header_col)$
   header_col: "$header_col$",
+$endif$
+$if(logo_path)$
+  logo_path: "$logo_path$",
 $endif$
 )

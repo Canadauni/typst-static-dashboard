@@ -12,10 +12,13 @@
   title: "Static Dashboard Template",
   grid-cols: 3,
   grid-rows: 3,
+  font-size: 12,
+  font-col: "3E4440",
   paper: "us-letter",
   flipped: true,
   margin: (x: 0.15in, y: 0.6in),
   header_col: "FFA500",
+  logo_path: none,
   body
 ) = {
   set page(
@@ -35,11 +38,21 @@
       size: 16pt,
       title
     ),
-    header-ascent: 45%
+    header-ascent: 45%,
+    footer:
+      if logo_path == none {
+        none } 
+      else {
+        align(left)[
+          #image(logo_path, width: 15%)
+        ]
+      },
+    footer-descent: 22%
   )
   set text(
     font: "Calibri",
-    fill: rgb("#3E4440")
+    size: 12pt,
+    fill: rgb(font-col)
   )
   set grid(
     columns: (1fr,) * grid-cols,
