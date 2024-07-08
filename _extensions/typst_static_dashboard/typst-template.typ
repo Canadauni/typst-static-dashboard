@@ -17,15 +17,15 @@
   paper: "us-letter",
   flipped: true,
   margin: (x: 0.15in, y: 0.6in),
-  header_col: "FFA500",
-  logo_path: none,
+  header-col: "FFA500",
+  logo-path: none,
   body
 ) = {
   set page(
     paper: paper,
     flipped: true,
     margin: margin,
-    fill: rgb(header_col),
+    fill: rgb(header-col),
     background: place(horizon, rect(
       fill: white,
       height: 7.5in,
@@ -40,18 +40,18 @@
     ),
     header-ascent: 45%,
     footer:
-      if logo_path == none {
+      if logo-path == none {
         none } 
       else {
         align(left)[
-          #image(logo_path, width: 15%)
+          #image(logo-path, width: 15%)
         ]
       },
     footer-descent: 22%
   )
   set text(
     font: "Calibri",
-    size: 12pt,
+    size: font-size,
     fill: rgb(font-col)
   )
   set grid(

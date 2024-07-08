@@ -23,7 +23,7 @@ $if(grid-rows)$
   grid-rows: $grid-rows$,
 $endif$
 $if(font-size)$
-  font-size: "$font-size$",
+  font-size: $font-size$,
 $endif$
 $if(font-col)$
   font-col: "$font-col$",
@@ -37,10 +37,10 @@ $endif$
 $if(margin)$
   margin: ($for(margin/pairs)$$margin.key$: $margin.value$,$endfor$),
 $endif$
-$if(header_col)$
-  header_col: "$header_col$",
+$if(header-col)$
+  header-col: "$header-col$",
 $endif$
-$if(logo_path)$
-  logo_path: "$logo_path$",
+$if(logo-path)$
+  logo-path: "$logo-path$",
 $endif$
 )

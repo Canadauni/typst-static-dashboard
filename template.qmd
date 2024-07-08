@@ -4,7 +4,9 @@ grid-cols: 3
 grid-rows: 3
 paper: "us-letter"
 flipped: true
-header_col: "FFA500"
+header-col: "FFA500"
+font-size: "10pt"
+font-col: "FFA500"
 format:
   typst_static_dashboard-typst: default
 ---
