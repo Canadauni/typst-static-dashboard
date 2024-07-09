@@ -42,6 +42,7 @@ Hello, welcome to the dashboard template, this is a static dashboard meant to ge
 
 ::: {.dashcell}
 ### Sample Graph
+
 ```{r}
 #| ref-label: ggplot-code
 #| eval: true
