@@ -89,27 +89,18 @@ Hello, welcome to the dashboard template, this is a static dashboard meant to ge
 ::: {.dashcell}
 ### Sample Graph
 
-```{r}
-#| ref-label: ggplot-code
-#| eval: true
-```
+{{< placeholder 250 150 >}}
+:::
+
+::: {.dashcell}
+### Sample Text
+
+{{< lipsum 1 >}}
 :::
 
 ::: {.dashcell}
 ### Sample Graph
 
-```{r}
-#| ref-label: ggplot-code
-#| eval: true
-```
-:::
-
-::: {.dashcell}
-### Sample Graph
-
-```{r}
-#| ref-label: ggplot-code
-#| eval: true
-```
+{{< placeholder 250 150 >}}
 :::
 ::::
