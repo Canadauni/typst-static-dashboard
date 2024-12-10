@@ -17,8 +17,9 @@ This is essentially a static dashboard format and is 100% still a work in progre
 
 Have a look at the `template.qmd` file to see how I have set it up but essentially a Lua filter on the backend is looking to build the dashboard elements by looking for a fence of `::::{.dashgrid}` and then each cell area is defined as being a `:::{.dashcell}`. If you aren't careful the graphs clip outside of the individual cells so make sure you are setting your `out.height` and `out.width` accordingly.
 
-I think future work involves making the features a bit more flexible.
+If you want to have your cells span columns or rows you can add that attribute to the dashcell fence like `:::{.dashcell colspan=2}` or `:::{.dashcell rowspan=2}`. Currently I'm not checking to see if your span is larger than the number of rows or columns available so keep that in mind when setting your spans.
 
-  - I'd like to see if it is possible to make a cell span two spaces instead of 1 for instance.
+I think future work involves making the features a bit more flexible:
+
   - Computing the header sizes and title position based on the margins
-  - making more of the aesthetic options available through the quarto config yaml
+  - using the brand.yml quarto feature to set aesthetic features

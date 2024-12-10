@@ -92,15 +92,9 @@ Hello, welcome to the dashboard template, this is a static dashboard meant to ge
 {{< placeholder 250 150 >}}
 :::
 
-::: {.dashcell}
+::: {.dashcell colspan=2}
 ### Sample Text
 
 {{< lipsum 1 >}}
-:::
-
-::: {.dashcell}
-### Sample Graph
-
-{{< placeholder 250 150 >}}
 :::
 ::::
